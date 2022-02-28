@@ -14,8 +14,9 @@ public class SfgDiApplication {
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
 		MyController myController = (MyController) ctx.getBean("myController");
-		String greeting = myController.greeting();
-		System.out.println(greeting);
+//		String greeting = myController.greeting();
+		System.out.println("---Primary Bean");
+		System.out.println(myController.greeting());
 		System.out.println("---Property Injected----");
 		PropertyInjectedController propertyInjectedController = (PropertyInjectedController) ctx.getBean("propertyInjectedController");
 		System.out.println(propertyInjectedController.getGreeting());
