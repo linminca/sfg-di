@@ -9,6 +9,6 @@ public class I18nSpanishGreetingService implements GreetingService{
 
     @Override
     public String sayGreeting() {
-        return "Hola Nundo - ES";
+        return "Hola Mundo - ES";
     }
 }
